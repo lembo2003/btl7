@@ -42,14 +42,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.testlb = new System.Windows.Forms.Label();
+            this.del_button = new System.Windows.Forms.Button();
+            this.edit_button = new System.Windows.Forms.Button();
+            this.add_account_btn = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +55,9 @@
             this.username1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -206,9 +206,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.testlb);
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button5);
+            this.groupBox1.Controls.Add(this.del_button);
+            this.groupBox1.Controls.Add(this.edit_button);
+            this.groupBox1.Controls.Add(this.add_account_btn);
             this.groupBox1.Location = new System.Drawing.Point(7, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(202, 401);
@@ -217,38 +217,47 @@
             this.groupBox1.Text = "Thao tác liên quan đến tài khoản";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // button6
+            // testlb
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(36, 209);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(129, 56);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "Xóa";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.testlb.AutoSize = true;
+            this.testlb.Location = new System.Drawing.Point(75, 298);
+            this.testlb.Name = "testlb";
+            this.testlb.Size = new System.Drawing.Size(53, 13);
+            this.testlb.TabIndex = 4;
+            this.testlb.Text = "Test lable";
             // 
-            // button4
+            // del_button
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(36, 122);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(129, 60);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Chỉnh sửa";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.del_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.del_button.Location = new System.Drawing.Point(36, 209);
+            this.del_button.Name = "del_button";
+            this.del_button.Size = new System.Drawing.Size(129, 56);
+            this.del_button.TabIndex = 3;
+            this.del_button.Text = "Xóa";
+            this.del_button.UseVisualStyleBackColor = true;
+            this.del_button.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button5
+            // edit_button
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(36, 32);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(129, 63);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Thêm tài khoản";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.edit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.edit_button.Location = new System.Drawing.Point(36, 122);
+            this.edit_button.Name = "edit_button";
+            this.edit_button.Size = new System.Drawing.Size(129, 60);
+            this.edit_button.TabIndex = 1;
+            this.edit_button.Text = "Chỉnh sửa";
+            this.edit_button.UseVisualStyleBackColor = true;
+            this.edit_button.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // add_account_btn
+            // 
+            this.add_account_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_account_btn.Location = new System.Drawing.Point(36, 32);
+            this.add_account_btn.Name = "add_account_btn";
+            this.add_account_btn.Size = new System.Drawing.Size(129, 63);
+            this.add_account_btn.TabIndex = 2;
+            this.add_account_btn.Text = "Thêm tài khoản";
+            this.add_account_btn.UseVisualStyleBackColor = true;
+            this.add_account_btn.Click += new System.EventHandler(this.button5_Click);
             // 
             // dataGridView1
             // 
@@ -269,45 +278,6 @@
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.chondong);
             this.dataGridView1.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dataGridView1_RowPrePaint);
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(893, 531);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Quy định";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.button1);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(893, 531);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Quit";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(280, 165);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(326, 164);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Đăng xuất";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // testlb
-            // 
-            this.testlb.AutoSize = true;
-            this.testlb.Location = new System.Drawing.Point(75, 298);
-            this.testlb.Name = "testlb";
-            this.testlb.Size = new System.Drawing.Size(53, 13);
-            this.testlb.TabIndex = 4;
-            this.testlb.Text = "Test lable";
             // 
             // STT
             // 
@@ -357,6 +327,36 @@
             this.type.HeaderText = "Loại người dùng";
             this.type.Name = "type";
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(893, 531);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Quy định";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.button1);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(893, 531);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Quit";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(280, 165);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(326, 164);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Đăng xuất";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // admin_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -400,9 +400,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button del_button;
+        private System.Windows.Forms.Button add_account_btn;
+        private System.Windows.Forms.Button edit_button;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label testlb;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;

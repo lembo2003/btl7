@@ -54,8 +54,8 @@ namespace BTL7
             sdt_txt.Text = info.sdt;
 
             dataGridView1.DataSource = admin.admin_LoadDGV();
-            button4.Enabled = false;
-            button6.Enabled = false;
+            edit_button.Enabled = false;
+            del_button.Enabled = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -95,23 +95,28 @@ namespace BTL7
             int i = e.RowIndex;
             usernameadmin = dataGridView1.Rows[i].Cells[1].Value.ToString();
             testlb.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
-            button4.Enabled = true;
-            button6.Enabled = true;
+            edit_button.Enabled = true;
+            del_button.Enabled = true;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             usernameadmin = "";
             admin_edit_form adminform = new admin_edit_form(usernameadmin);
+            adminform.FormClosed += new FormClosedEventHandler(admin_FormClosed);
             adminform.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             admin_edit_form adminform = new admin_edit_form(usernameadmin);
+            adminform.FormClosed += new FormClosedEventHandler(admin_FormClosed);
             adminform.Show();
         }
-
+        void admin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            admin_form_Load(null,null);
+        }
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
@@ -119,7 +124,19 @@ namespace BTL7
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+         
+            DialogResult dialogResult = MessageBox.Show("Bạn thực sự muốn xóa?", "Cảnh Báo", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                BUS_admincontrol admin = new BUS_admincontrol();
+                DTO_admincontrol ob = BUS_admincontrol.GetUserInformationAdminC(usernameadmin);
+                admin.Delete_AdminControl(ob);
+                admin_form_Load(null,null);
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+            }
         }
     }
-}
+    }
+
