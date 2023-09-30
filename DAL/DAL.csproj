@@ -44,6 +44,7 @@
     <Compile Include="DAL_account.cs" />
     <Compile Include="DAL_admincontrol.cs" />
     <Compile Include="DAL_connection.cs" />
+    <Compile Include="DAL_GD_noiquy.cs" />
     <Compile Include="DAL_info.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

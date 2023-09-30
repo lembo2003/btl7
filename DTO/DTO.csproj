@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DTO_account.cs" />
     <Compile Include="DTO_admincontrol.cs" />
+    <Compile Include="DTO_GD_noiquy.cs" />
     <Compile Include="DTO_info.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
