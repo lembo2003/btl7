@@ -20,5 +20,17 @@ namespace BUS
             DAL_admincontrol dal = new DAL_admincontrol();
             return dal.GetUserInformationAdminC(username);
         }
+        public void Insert_AdminControl(DTO_admincontrol ob)
+        {
+            admin.Insert_AdminControl(ob);
+        }
+        public void Update_AdminControl(DTO_admincontrol ob)
+        {
+            admin.Update_AdminControl(ob);
+        }
+        public void Delete_AdminControl(DTO_admincontrol ob)
+        {
+            admin.Delete_AdminControl(ob);
+        }
     }
 }
