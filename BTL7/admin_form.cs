@@ -45,6 +45,7 @@ namespace BTL7
 
         }
         BUS_admincontrol admin = new BUS_admincontrol();
+        BUS_GD_noiquy adminnoiquy = new BUS_GD_noiquy();
         private void admin_form_Load(object sender, EventArgs e)
         {
             DTO_info info = BUS_info.GetUserInformation(username);
@@ -56,6 +57,8 @@ namespace BTL7
             dataGridView1.DataSource = admin.admin_LoadDGV();
             edit_button.Enabled = false;
             del_button.Enabled = false;
+
+            dataGridView2.DataSource = adminnoiquy.Load_noiquy_nonGD();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -136,6 +139,33 @@ namespace BTL7
             else if (dialogResult == DialogResult.No)
             {
             }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void danhstt(object sender, DataGridViewRowPrePaintEventArgs e)
+        {
+            for (int i = 0; i < dataGridView2.Rows.Count - 1; i++)
+            {
+                dataGridView2.Rows[i].Cells[0].Value = i + 1;
+            }
+
+        }
+
+        private void danhsttls(object sender, DataGridViewRowPrePaintEventArgs e)
+        {
+            for (int i = 0; i < dataGridView3.Rows.Count - 1; i++)
+            {
+                dataGridView3.Rows[i].Cells[0].Value = i + 1;
+            }
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
     }
