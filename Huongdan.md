@@ -11,6 +11,7 @@ Nhớ connect sql và chỉnh bảng cho đúng với code, hoặc chỉnh code.
 hiện tại sql:
 login(username,password,type)
 account(username,hoten,diachi,email,sdt)
+rules(username,tennd,noidung,tinhtrang)
 ----
 Đang add thêm bảng nội quy
 
