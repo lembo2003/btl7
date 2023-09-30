@@ -34,5 +34,42 @@ namespace DAL
             }
             return info;
         }
+        public void Insert_AdminControl(DTO_admincontrol ob)
+        {
+            string sql = "insert into login values('" + ob.username + "','" + ob.password + "','" + ob.type + "')";
+            Excecute(sql);
+            string sql2 = "insert into account_info values('" + ob.username + "', '" + ob.hoten + "', '" + ob.diachi + "', '" + ob.email + "', '" + ob.sdt + "')";
+            Excecute(sql2);            
+        }
+        public void Update_AdminControl(DTO_admincontrol ob)
+        {
+            string sql2 = "update account_info set hoten = @hoten, diachi = @diachi, email = @email, sdt = @sdt where username = @username";
+            SqlCommand command2 = new SqlCommand(sql2);
+            command2.Parameters.AddWithValue("@username", ob.username);
+            command2.Parameters.AddWithValue("@hoten", ob.hoten);
+            command2.Parameters.AddWithValue("@diachi", ob.diachi);
+            command2.Parameters.AddWithValue("@email", ob.email);
+            command2.Parameters.AddWithValue("@sdt", ob.sdt);
+            Execute_CMD(command2);
+
+            string sql = "update login set password = @password, type = @type where username = @username";
+            SqlCommand command = new SqlCommand(sql);
+            command.Parameters.AddWithValue("@username", ob.username);
+            command.Parameters.AddWithValue("@password", ob.password);
+            command.Parameters.AddWithValue("@type", ob.type);
+            Execute_CMD(command);
+        }
+        public void Delete_AdminControl(DTO_admincontrol ob)
+        {
+            string sql2 = "delete from account_info where username = @username";
+            SqlCommand command2 = new SqlCommand(sql2);
+            command2.Parameters.AddWithValue("@username", ob.username);
+            Execute_CMD(command2);
+
+            string sql = "delete from login where username = @username";
+            SqlCommand command = new SqlCommand(sql);
+            command.Parameters.AddWithValue("@username", ob.username);
+            Execute_CMD(command);
+        }
     }
 }

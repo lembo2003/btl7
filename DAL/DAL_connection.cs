@@ -28,6 +28,21 @@ namespace DAL
             cmd.ExecuteNonQuery();
             con.Close();
         }
+        public void Execute_CMD(SqlCommand cmd)
+        {
+            try
+            {
+                con.Open();
+                cmd.Connection = con;
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                // Log or print the exception message
+                Console.WriteLine(ex.Message);
+            }
+        }
         public SqlDataReader Read(string sql) 
         {
             con.Open();
@@ -44,5 +59,6 @@ namespace DAL
             SqlDataReader reader = cmd.ExecuteReader();
             return reader;
         }
+
     }
 }
