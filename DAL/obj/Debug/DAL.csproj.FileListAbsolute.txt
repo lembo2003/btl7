@@ -1,0 +1,18 @@
+C:\Users\nguye\source\repos\QuanLySTK\DAL\bin\Debug\DAL.dll
+C:\Users\nguye\source\repos\QuanLySTK\DAL\bin\Debug\DAL.pdb
+C:\Users\nguye\source\repos\QuanLySTK\DAL\bin\Debug\DTO.dll
+C:\Users\nguye\source\repos\QuanLySTK\DAL\bin\Debug\DTO.pdb
+C:\Users\nguye\source\repos\QuanLySTK\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\nguye\source\repos\QuanLySTK\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\nguye\source\repos\QuanLySTK\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\nguye\source\repos\QuanLySTK\DAL\obj\Debug\DAL.dll
+C:\Users\nguye\source\repos\QuanLySTK\DAL\obj\Debug\DAL.pdb
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\DAL\bin\Debug\DAL.dll
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\DAL\bin\Debug\DAL.pdb
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\DAL\bin\Debug\DTO.dll
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\DAL\bin\Debug\DTO.pdb
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\DAL\obj\Debug\DAL.dll
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\DAL\obj\Debug\DAL.pdb

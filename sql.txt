@@ -1,0 +1,56 @@
+create database QLSTK
+use QLSTK
+
+drop table GiaoDich;
+drop table KhachHang;
+drop table LaiSuat;
+drop table QuyDinh;
+
+create table GiaoDich
+(
+maso varchar(10) primary key,
+makh varchar(10),
+sotiengui float,
+maloaiso nvarchar(100),
+ngaymoso date,
+ngaydenhan date,
+maquydinh varchar(10)
+)
+
+create table KhachHang
+(
+makh varchar(10) primary key,
+hoten nvarchar(100),
+diachi nvarchar(100),
+cccd varchar(12),
+sdt varchar(10),
+sodu float
+)
+
+create table LaiSuat
+(
+maloaiso varchar(10) primary key,
+thoihan int,
+tenloaiso nvarchar(100),
+laisuat float,
+)
+
+create table QuyDinh
+(
+maquydinh varchar(10) primary key,
+tenquydinh nvarchar(100),
+noidung nvarchar(255)
+)
+
+create table LichSuGiaoDich
+(
+maso varchar(10) primary key,
+makh varchar(10),
+sotiengui float,
+maloaiso nvarchar(100),
+ngaymoso date,
+ngaydenhan date,
+maquydinh varchar(10),
+ngaycapnhat date
+)
+select * from giaodich

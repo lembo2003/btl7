@@ -1,0 +1,6 @@
+C:\Users\nguye\source\repos\QuanLySTK\DTO\bin\Debug\DTO.dll
+C:\Users\nguye\source\repos\QuanLySTK\DTO\bin\Debug\DTO.pdb
+C:\Users\nguye\source\repos\QuanLySTK\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\nguye\source\repos\QuanLySTK\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\nguye\source\repos\QuanLySTK\DTO\obj\Debug\DTO.dll
+C:\Users\nguye\source\repos\QuanLySTK\DTO\obj\Debug\DTO.pdb

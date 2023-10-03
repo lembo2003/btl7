@@ -1,0 +1,42 @@
+C:\Users\nguye\source\repos\QuanLySTK\GUI\bin\Debug\GUI.exe.config
+C:\Users\nguye\source\repos\QuanLySTK\GUI\bin\Debug\GUI.exe
+C:\Users\nguye\source\repos\QuanLySTK\GUI\bin\Debug\GUI.pdb
+C:\Users\nguye\source\repos\QuanLySTK\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\nguye\source\repos\QuanLySTK\GUI\obj\Debug\GUI.frmQuanLyGiaoDich.resources
+C:\Users\nguye\source\repos\QuanLySTK\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\nguye\source\repos\QuanLySTK\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\nguye\source\repos\QuanLySTK\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\nguye\source\repos\QuanLySTK\GUI\obj\Debug\GUI.exe
+C:\Users\nguye\source\repos\QuanLySTK\GUI\obj\Debug\GUI.pdb
+C:\Users\nguye\source\repos\QuanLySTK\GUI\obj\Debug\GUI.frmSanh.resources
+C:\Users\nguye\source\repos\QuanLySTK\GUI\obj\Debug\GUI.frmQuanLyKhachHang.resources
+C:\Users\nguye\source\repos\QuanLySTK\GUI\obj\Debug\GUI.frmLaiSuatQuyDinh.resources
+C:\Users\nguye\source\repos\QuanLySTK\GUI\bin\Debug\BUS.dll
+C:\Users\nguye\source\repos\QuanLySTK\GUI\bin\Debug\DTO.dll
+C:\Users\nguye\source\repos\QuanLySTK\GUI\bin\Debug\DAL.dll
+C:\Users\nguye\source\repos\QuanLySTK\GUI\bin\Debug\BUS.pdb
+C:\Users\nguye\source\repos\QuanLySTK\GUI\bin\Debug\DTO.pdb
+C:\Users\nguye\source\repos\QuanLySTK\GUI\bin\Debug\DAL.pdb
+C:\Users\nguye\source\repos\QuanLySTK\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\nguye\source\repos\QuanLySTK\GUI\obj\Debug\GUI.frmDangNhap.resources
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\bin\Debug\GUI.exe.config
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\bin\Debug\GUI.exe
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\bin\Debug\GUI.pdb
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\bin\Debug\BUS.dll
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\bin\Debug\DTO.dll
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\bin\Debug\DAL.dll
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\bin\Debug\BUS.pdb
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\bin\Debug\DTO.pdb
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\bin\Debug\DAL.pdb
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\obj\Debug\GUI.frmDangNhap.resources
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\obj\Debug\GUI.frmLaiSuatQuyDinh.resources
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\obj\Debug\GUI.frmQuanLyGiaoDich.resources
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\obj\Debug\GUI.frmQuanLyKhachHang.resources
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\obj\Debug\GUI.frmSanh.resources
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\obj\Debug\GUI.exe
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\GUI\obj\Debug\GUI.pdb
