@@ -113,9 +113,9 @@ namespace GUI
         }
       
         private string maso;
-        private float sotiengui;
-        private int thoihan;
-        private string makh;
+       // private float sotiengui;
+       // private int thoihan;
+        //private string makh;
         private void btnTatToan_Click(object sender, EventArgs e)
         {
             try
@@ -131,9 +131,12 @@ namespace GUI
                 // int thoihan = int.Parse(currentRow.Cells["maloaiso"].Value.ToString());
                 //testtxt.Text = currentRow.Cells["makh"].Value.ToString();
                 // Thuc hien TAT     
-                GD.TatToan(maso, makh,sotiengui, thoihan);
-                frmQuanLyGiaoDich_Load(null, null);
-                MessageBox.Show("Đã tất toán!", "Thông báo", MessageBoxButtons.OK);
+                if (dataGridView1.CurrentRow != null)
+                {
+                    GD.TatToan(maso);
+                    frmQuanLyGiaoDich_Load(null, null);
+                    MessageBox.Show("Đã tất toán!", "Thông báo", MessageBoxButtons.OK);
+                }
                 //}
                 //else
                // {
@@ -154,13 +157,13 @@ namespace GUI
                 {
                     int i = dataGridView1.CurrentRow.Index;
                     maso = dataGridView1.Rows[i].Cells[1].Value.ToString();
-                    makh = dataGridView1.Rows[i].Cells[2].Value.ToString();
+                    //makh = dataGridView1.Rows[i].Cells[2].Value.ToString();
                     testtxt.Text = dataGridView1.Rows[i].Cells[1].Value == null ? string.Empty : dataGridView1.Rows[i].Cells[1].Value.ToString();
                     //get so tien gui and convert it to float
-                    sotiengui = float.Parse(dataGridView1.Rows[i].Cells[3].Value == null ? string.Empty : dataGridView1.Rows[i].Cells[3].Value.ToString());
+                    //sotiengui = float.Parse(dataGridView1.Rows[i].Cells[3].Value == null ? string.Empty : dataGridView1.Rows[i].Cells[3].Value.ToString());
 
                     //get thoi han and convert it to int
-                    thoihan = int.Parse(dataGridView1.Rows[i].Cells[4].Value == null ? string.Empty : dataGridView1.Rows[i].Cells[4].Value.ToString());
+                    //thoihan = int.Parse(dataGridView1.Rows[i].Cells[4].Value == null ? string.Empty : dataGridView1.Rows[i].Cells[4].Value.ToString());
                 }
             }
             catch (System.NullReferenceException ex)

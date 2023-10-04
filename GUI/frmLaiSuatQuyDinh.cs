@@ -28,10 +28,9 @@ namespace GUI
 
         private void btnThemLaiSuat_Click(object sender, EventArgs e)
         {
-            DTO_LaiSuat ob = new DTO_LaiSuat(txtMaloaiso.Text, txtThoihan.Text, txtLoaiso.Text,txtLaisuat.Text);
+            DTO_LaiSuat ob = new DTO_LaiSuat(txtThoihan.Text, txtLoaiso.Text,txtLaisuat.Text);
             LS.LS_Insert_Bus(ob);
             frmLaiSuatQuyDinh_Load(sender, e);
-            txtMaloaiso.Clear();
             txtThoihan.Clear();
             txtLoaiso.Clear();
             txtLaisuat.Clear();
@@ -48,10 +47,9 @@ namespace GUI
 
         private void btnXoaLaiSuat_Click(object sender, EventArgs e)
         {
-            DTO_LaiSuat ob = new DTO_LaiSuat(txtMaloaiso.Text, txtThoihan.Text, txtLoaiso.Text, txtLaisuat.Text);
-            LS.LS_Delete_Bus(txtMaloaiso.Text);
+            DTO_LaiSuat ob = new DTO_LaiSuat(txtThoihan.Text, txtLoaiso.Text, txtLaisuat.Text);
+            LS.LS_Delete_Bus(txtThoihan.Text);
             frmLaiSuatQuyDinh_Load(sender, e);
-            txtMaloaiso.Clear();
             txtThoihan.Clear();
             txtLoaiso.Clear();
             txtLaisuat.Clear();
@@ -59,10 +57,9 @@ namespace GUI
 
         private void btnSuaLaiSuat_Click(object sender, EventArgs e)
         {
-            DTO_LaiSuat ob = new DTO_LaiSuat(txtMaloaiso.Text, txtThoihan.Text, txtLoaiso.Text, txtLaisuat.Text);
+            DTO_LaiSuat ob = new DTO_LaiSuat(txtThoihan.Text, txtLoaiso.Text, txtLaisuat.Text);
             LS.LS_Update_Bus(ob);
             frmLaiSuatQuyDinh_Load(sender, e);
-            txtMaloaiso.Clear();
             txtThoihan.Clear();
             txtLoaiso.Clear();
             txtLaisuat.Clear();
