@@ -35,15 +35,65 @@ namespace DAL
             DataTable dt = Load("select sodu from khachhang where makh='" + makh + "'");
             return float.Parse(dt.Rows[0]["sodu"].ToString());
         }
-        public void Capnhatsodu(string makh, float newBalance)
+        public void Capnhatsodu(string makh, double newBalance)
         {
             Excecute("update khachhang set sodu= " + newBalance + " where makh='" + makh + "'");
         }
-        public float get_LaiSuat(string maso)
+        public float get_LaiSuat(int thoihan)
         {
-            string sql = "select laisuat from Laisuat where maloaiso='" + maso + "'";
-            float interest = Executee(sql);
-            return interest;
+            DataTable dt = Load("select laisuat from Laisuat where thoihan='" + thoihan + "'");
+            if (dt.Rows.Count > 0)
+            {
+                return float.Parse(dt.Rows[0]["laisuat"].ToString());
+            }
+            else
+            {
+                Console.WriteLine("No rows returned.");
+                return 0; // or any default value
+            }
+        }
+
+        public int get_ThoiHan(string maso)
+        {
+            DataTable dt = Load("select thoihan from GiaoDich where maso='" + maso + "'");
+            if (dt.Rows.Count > 0)
+            {
+                return int.Parse(dt.Rows[0]["thoihan"].ToString());
+            }
+            else
+            {
+                Console.WriteLine("No rows returned.");
+                return 0; // or any default value
+            }
+        }
+
+        public float get_SoTienGui(string maso)
+        {
+            DataTable dt = Load("select sotiengui from giaodich where maso='" + maso + "'");
+            if (dt.Rows.Count > 0)
+            {
+                return float.Parse(dt.Rows[0]["sotiengui"].ToString());
+            }
+            else
+            {
+                Console.WriteLine("No rows returned.");
+                return 0; // or any default value
+            }
+        }
+
+        public string get_MaKH(string maso)
+        {
+            DataTable dt = Load("select makh from giaodich where maso='" + maso + "'");
+            if (dt.Rows.Count > 0)
+            {
+                return dt.Rows[0]["makh"].ToString();
+            }
+            else
+            {
+                // Handle the case where no rows were returned
+                Console.WriteLine("No rows returned.");
+                return null;
+            }
         }
     }
 }

@@ -17,17 +17,17 @@ namespace DAL
         }
         public void Insert_LaiSuat(DTO_LaiSuat ob)
         {
-            string sql="insert into LaiSuat values('"+ob.maloaiso+"',N'"+ob.thoihan+"',N'"+ob.tenloaiso+"','"+ob.laisuat.ToString()+"')";
+            string sql="insert into LaiSuat values(N'"+ob.thoihan+"',N'"+ob.tenloaiso+"','"+ob.laisuat.ToString()+"')";
             Excecute(sql);
         }
         public void Update_LaiSuat(DTO_LaiSuat ob)
         {
-            string sql = "update LaiSuat set thoihan=N'" + ob.thoihan + "',tenloaiso=N'" + ob.tenloaiso + "', laisuat='" + ob.laisuat.ToString() + "'where maloaiso='" + ob.maloaiso + "'";
+            string sql = "update LaiSuat set thoihantenloaiso=N'" + ob.tenloaiso + "', laisuat='" + ob.laisuat.ToString() + "'where thoihan='" + ob.thoihan + "'";
             Excecute(sql);
         }
-        public void Delete_LaiSuat(string maloaiso)
+        public void Delete_LaiSuat(string thoihan)
         {
-            string sql = "delete from LaiSuat where maloaiso='" + maloaiso + "'";
+            string sql = "delete from LaiSuat where maloaiso='" + thoihan + "'";
             Excecute(sql);
         }
         public DataTable Load_LoaiSo()

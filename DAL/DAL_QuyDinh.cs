@@ -34,5 +34,6 @@ namespace DAL
         {
             return Load("select tenquydinh from QuyDinh");
         }
+        
     }
 }

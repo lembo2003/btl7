@@ -24,9 +24,9 @@ namespace BUS
         {
             LS.Update_LaiSuat(ob);
         }
-        public void LS_Delete_Bus(string maloaiso)
+        public void LS_Delete_Bus(string thoihan)
         {
-            LS.Delete_LaiSuat(maloaiso);
+            LS.Delete_LaiSuat(thoihan);
         }
         public List<string> Get_TenLoaiSo()
         {

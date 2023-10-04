@@ -11,7 +11,7 @@ create table GiaoDich
 maso varchar(10) primary key,
 makh varchar(10),
 sotiengui float,
-maloaiso nvarchar(100),
+thoihan int,
 ngaymoso date,
 ngaydenhan date,
 maquydinh varchar(10)
@@ -29,8 +29,7 @@ sodu float
 
 create table LaiSuat
 (
-maloaiso varchar(10) primary key,
-thoihan int,
+thoihan int primary key,
 tenloaiso nvarchar(100),
 laisuat float,
 )
@@ -53,4 +52,3 @@ ngaydenhan date,
 maquydinh varchar(10),
 ngaycapnhat date
 )
-select * from giaodich

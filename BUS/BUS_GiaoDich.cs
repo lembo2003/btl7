@@ -11,7 +11,7 @@ namespace BUS
     public class BUS_GiaoDich
     {
         DAL_GiaoDich gd = new DAL_GiaoDich();
-
+        DAL_LaiSuat LS = new DAL_LaiSuat();
         public DataTable Load_BUS()
         {
             return gd.Load_GiaoDich();
@@ -31,11 +31,16 @@ namespace BUS
             gd.Capnhatsodu(makh, balance - sotiengui);
             return true;
         }
-        public void TatToan(string maso,string makh, float sotiengui, int thoihan)
+        public void TatToan(string maso)
         {
-            //tinh
-            float interest = gd.get_LaiSuat(maso);
-            float newBalance = sotiengui * interest / 100 * thoihan;
+            //tinh //interest bi loi// 3.15
+            int thoihan = gd.get_ThoiHan(maso);
+            double laisuat = gd.get_LaiSuat(thoihan);
+            double sotiengui = gd.get_SoTienGui(maso);
+            string makh = gd.get_MaKH(maso);
+            double sodu = gd.GetSodu(makh);
+            double tienlai = sotiengui * laisuat/100 * thoihan*30;
+            double newBalance = sodu +sotiengui +tienlai;
             //cap nhat so du
             gd.Capnhatsodu(makh, newBalance);
             //xoa(ve sau la chuyen sang lich su giao dich)

@@ -4,3 +4,9 @@ C:\Users\nguye\source\repos\QuanLySTK\DTO\obj\Debug\DTO.csproj.AssemblyReference
 C:\Users\nguye\source\repos\QuanLySTK\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\nguye\source\repos\QuanLySTK\DTO\obj\Debug\DTO.dll
 C:\Users\nguye\source\repos\QuanLySTK\DTO\obj\Debug\DTO.pdb
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\DTO\bin\Debug\DTO.dll
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\DTO\bin\Debug\DTO.pdb
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\DTO\obj\Debug\DTO.dll
+C:\Users\Admin\Downloads\QuanLySTK (1)\QuanLySTK\DTO\obj\Debug\DTO.pdb
